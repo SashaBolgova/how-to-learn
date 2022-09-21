@@ -127,8 +127,9 @@
 }
 
 .digits {
-padding-top: 100px;
-padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
 
 .section-title {
@@ -287,6 +288,7 @@ padding-bottom: 100px;
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -298,6 +300,7 @@ padding-bottom: 100px;
   background-color: #1f1f1f;
   min-height: 350px;
   display: flex;
+  box-sizing: border-box;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -352,7 +355,7 @@ padding-bottom: 100px;
   color: white;
   text-decoration: none;
 }
-  
+
 
 .footer__column_content_social {
   align-items: flex-start;
@@ -363,4 +366,3 @@ padding-bottom: 100px;
   height: 16px;
   margin-right: 10px;
 }
-
