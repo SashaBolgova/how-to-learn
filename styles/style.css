@@ -1,368 +1,100 @@
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  display: flex;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.logo {
-  width: 228px;
-  height: 32px;
-}
-
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 3;
-}
-
-.header__title {
-  align-self: center;
-  width: 730px;
-  font-size: 102px;
-  font-weight: 600;
-  line-height: 96px;
-  margin-left: 64px;
-  margin-top: 0;
-  margin-bottom: 0;
-  z-index: 3;
-}
-
-.header__subtitle {
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  width: 388px;
-  line-height: 25px;
-  z-index: 3;
-  font-weight: normal;
-  font-size: 18px;
-  margin: 0;
-}
-
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.header__main-illustration {
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  object-fit: cover;
-}
-
-.header__square-pic {
-  width: 568px;
-  height: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  right: 0;
-  top: 64px;
-  z-index: 1;
-}
-
-.description {
-  padding-top: 100px;
-}
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  width: 80%;
-}
-
-.two-columns__brief {
-  align-self: flex-start;
-  color: #2f80ed;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-  width: 175px;
-  margin: 0;
-  padding: 0;
-}
-
-.two-columns__main-text {
-  min-width: 784px;
-  width: 80%;
-  font-size: 24px;
-  line-height: 34px;
-  margin: 0;
-  padding: 0;
-}
-
-.two-columns__paragraph {
-  margin: 0 0 30px;
-}
-
-.two-columns__paragraph:last-child {
-  margin-bottom: 0;
-}
-
-.two-columns__span-accent {
-  font-weight: 600;
-}
-
-.digits {
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-}
-
-.section-title {
-  width: 60%;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: 0 auto 20px;
-  text-align: center;
-}
-
-.section-subtitle {
-  margin: auto;
-  width: 60%;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  text-align: center;
-}
-
-.table {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto auto 0;
-  padding: 0;
-  width: 1100px;
-  list-style: none;
-}
-
-.table__cell {
-  margin: 60px 0 0;
-  width: 250px;
-}
-
-.table__heading {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: 0;
-}
-
-.table__text {
-  margin: 20px 0 0;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-}
-
-.feynman {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f2f2f2;
-  margin: 0;
-  position: relative;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 100px;
-  min-height: 890px;
-}
-
-.feynman__title {
-  text-align: center;
-  width: 648px;
-  margin: 0 auto 70px;
-  font-size: 120px;
-  font-weight: 600;
-  line-height: 1.15;
-  position: relative;
-  z-index: 1;
-}
-
-.feynman__subtitle {
-  margin: 0 auto auto;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 51px;
-  position: relative;
-  z-index: 1;
-}
-
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 51px;
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.feyman__main-illustration {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-}
-
-.kaufman {
-  background-color: #1f1f1f;
-  overflow: hidden;
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.section-title_theme_dark {
-  color: white;
-}
-
-.section-subtitle_theme_dark {
-  text-align: center;
-  margin: auto;
-  width: 60%;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  color: white;
-}
-
-.table_theme_dark {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto auto 0;
-  padding: 0;
-  width: 1100px;
-  list-style: none;
-  position: relative;
-  z-index: 1;
-  color: white;
-}
-
-.table__cell_theme_dark {
-  margin: 80px 0 0;
-  width: 200px;
-}
-
-.table__heading_theme_dark {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.15;
-  margin: 0;
-}
-
-.table__text_theme_dark {
-  margin: 20px 0 0;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-}
-
-.kaufman__triangle {
-  background-image: url(../images/kaufman-triangle.svg);
-  background-size: contain;
-  width: 877px;
-  height: 877px;
-  position: absolute;
-  right: -210px;
-  top: 0;
-}
-
-.footer {
-  background-color: #1f1f1f;
-  min-height: 350px;
-  display: flex;
-  box-sizing: border-box;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-
-.footer__columns {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.footer__column_content_copyright {
-  display: flex;
-  flex-basis: 711px;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.logo_place_footer {
-  align-self: flex-start;
-}
-
-.footer__author {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 25px;
-  margin: 18px 0;
-}
-
-.footer__column_content_info {
-  align-items: flex-start;
-}
-
-.footer__column-heading {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-  margin: 0 0 20px;
-}
-
-.footer__column-links {
-  list-style: none;
-  margin: 0 0 16px;
-  padding: 0;
-}
-
-.footer__column-link {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: normal;
-  color: white;
-  text-decoration: none;
-}
-
-
-.footer__column_content_social {
-  align-items: flex-start;
-}
-
-.footer__social-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
+@import url(../bloks/rotation/rotation.css);
+@import url(../bloks/opacity/opacity.css);
+@import url(../bloks/page.css);
+/* Стили для блока header */
+@import url(../bloks/header/header.css);
+@import url(../bloks/header/logo/logo.css);
+@import url(../bloks/header/logo/_place_header/logo_place_header.css);
+@import url(../bloks/header/__title/header__title.css);
+@import url(../bloks/header/__subtitle/header__subtitle.css);
+@import url(../bloks/header/__link/header__link.css);
+@import url(../bloks/header/__main-illustration/header__main-illustration.css);
+@import url(../bloks/header/__square-pic/header__square-pic.css);
+/* Стили для блока description */
+@import url(../bloks/content/description/description.css);
+@import url(../bloks/content/description/two-columns/two-columns.css);
+@import url(../bloks/content/description/two-columns/__brief/two-columns__brief.css);
+@import url(../bloks/content/description/two-columns/__main-text/two-columns__main-text.css);
+@import url(../bloks/content/description/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../bloks/content/description/two-columns/__span-accent/two-columns__span-accent.css);
+/* Стили для блока techniques */
+@import url(../bloks/content/techniques/techniques.css);
+@import url(../bloks/content/techniques/section-title/section-title.css);
+@import url(../bloks/content/techniques/section-subtitle/section-subtitle.css);
+@import url(../bloks/content/techniques/cards/cards.css);
+@import url(../bloks/content/techniques/cards/__item/cards__item.css);
+@import url(../bloks/content/techniques/cards/__image/cards__image.css);
+@import url(../bloks/content/techniques/cards/__title/cards__title.css);
+@import url(../bloks/content/techniques/cards/__description/cards__description.css);
+/* Стили для блока video */
+@import url(../bloks/content/video/video.css);
+@import url(../bloks/content/video/section-title/section-title.css);
+@import url(../bloks/content/video/section-subtitle/section-subtitle.css);
+@import url(../bloks/content/video/__iframes/video__iframes.css);
+/* Стили для блока oakley */
+@import url(../bloks/content/oakley/oakley.css);
+@import url(../bloks/content/oakley/two-columns/two-columns.css);
+@import url(../bloks/content/oakley/two-columns/__brief/two-columns__brief.css);
+@import url(../bloks/content/oakley/two-columns/__main-text/two-columns__main-text.css);
+@import url(../bloks/content/oakley/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../bloks/content/oakley/two-columns/__span-accent/two-columns__span-accent.css);
+/* Стили для блока feynman */
+@import url(../bloks/content/feynman/feynman.css);
+@import url(../bloks/content/feynman/__title/feynman__title.css);
+@import url(../bloks/content/feynman/__subtitle/feynman__subtitle.css);
+@import url(../bloks/content/feynman/__link/feynman__link.css);
+@import url(../bloks/content/feynman/__main-illustration/feyman__main-illustration.css);
+/* Стили для блока digits */
+@import url(../bloks/content/digits/digits.css);
+@import url(../bloks/content/digits/section-title/section-title.css);
+@import url(../bloks/content/digits/section-subtitle/section-subtitle.css);
+@import url(../bloks/content/digits/table/table.css);
+@import url(../bloks/content/digits/table/__cell/table__cell.css);
+@import url(../bloks/content/digits/table/__heading/table__heading.css);
+@import url(../bloks/content/digits/table/__text/table__text.css);
+/* Стили для блока khan */
+@import url(../bloks/content/khan/khan.css);
+@import url(../bloks/content/khan/__title/khan__title.css);
+@import url(../bloks/content/khan/__container/khan__container.css);
+@import url(../bloks/content/khan/__quote-author/khan__quote-author.css);
+@import url(../bloks/content/khan/__quote/khan__quote.css);
+@import url(../bloks/content/khan/__quote-author-subline/khan__quote-author-subline.css);
+@import url(../bloks/content/khan/__book-container/khan__book-container.css);
+@import url(../bloks/content/khan/__book-pic/khan__book-pic.css);
+@import url(../bloks/content/khan/__buy-link/khan__buy-link.css);
+@import url(../bloks/content/khan/__author/khan__author.css);
+/* Стили для блока kaufman */
+@import url(../bloks/content/kaufman/kaufman.css);
+@import url(../bloks/content/kaufman/section-title/section-title.css);
+@import url(../bloks/content/kaufman/section-title/_theme_dark/section-title_theme_dark.css);
+@import url(../bloks/content/kaufman/section-subtitle/section-subtitle.css);
+@import url(../bloks/content/kaufman/section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
+@import url(../bloks/content/kaufman/table/table.css);
+@import url(../bloks/content/kaufman/table/_theme_dark/table_theme_dark.css);
+@import url(../bloks/content/kaufman/table/__cell/table__cell.css);
+@import url(../bloks/content/kaufman/table/__cell/_theme_dark/table__cell_theme_dark.css);
+@import url(../bloks/content/kaufman/table/__heading/table__heading.css);
+@import url(../bloks/content/kaufman/table/__heading/_theme_dark/table__heading_theme_dark.css);
+@import url(../bloks/content/kaufman/table/__text/table__text.css);
+@import url(../bloks/content/kaufman/table/__text/_theme_dark/table__text_theme_dark.css);
+@import url(../bloks/content/kaufman/__triangle/kaufman__triangle.css);
+/* Стили для блока resources */
+@import url(../bloks/content//resources/resources.css);
+@import url(../bloks/content//resources/section-title/section-title.css);
+@import url(../bloks/content//resources/section-subtitle/section-subtitle.css);
+@import url(../bloks/content//resources/__logo-zone/resources__logo-zone.css);
+@import url(../bloks/content//resources/__logo/resources__logo.css);
+@import url(../bloks/content//resources/__link/resources__link.css);
+/* Стили для блока footer */
+@import url(../bloks/footer/footer.css);
+@import url(../bloks/footer/__columns/footer__columns.css);
+@import url(../bloks/footer/__column/_content/footer__column_content_copyright.css);
+@import url(../bloks/footer/logo/logo.css);
+@import url(../bloks/footer/logo/_place_footer/logo_place_footer.css);
+@import url(../bloks/footer/__author/footer__author.css);
+@import url(../bloks/footer/__column/_content/footer__column_content_info.css);
+@import url(../bloks/footer/__column-heading/footer__column-heading.css);
+@import url(../bloks/footer/__column-links/footer__column-links.css);
+@import url(../bloks/footer/__column-link/footer__column-link.css);
+@import url(../bloks/footer/__column/_content/footer__column_content_social.css);
+@import url(../bloks/footer/__social-icon/footer__social-icon.css);
