@@ -92,9 +92,9 @@
 @import url(../bloks/footer/logo/logo.css);
 @import url(../bloks/footer/logo/_place_footer/logo_place_footer.css);
 @import url(../bloks/footer/__author/footer__author.css);
+@import url(../bloks/footer/__social-icon/footer__social-icon.css);
 @import url(../bloks/footer/__column/_content/footer__column_content_info.css);
 @import url(../bloks/footer/__column-heading/footer__column-heading.css);
 @import url(../bloks/footer/__column-links/footer__column-links.css);
 @import url(../bloks/footer/__column-link/footer__column-link.css);
 @import url(../bloks/footer/__column/_content/footer__column_content_social.css);
-@import url(../bloks/footer/__social-icon/footer__social-icon.css);
