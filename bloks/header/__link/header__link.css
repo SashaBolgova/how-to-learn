@@ -4,5 +4,5 @@
 }
 
 .header__link:hover {
-  animation: opacity 1s ease;
+  animation: opacity 5s ease;
 }
